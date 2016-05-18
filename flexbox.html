@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML INTRO ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Headphones</title>
+
+    <!-- BASE CSS -->
+    <link rel="stylesheet" href="styles/base/normalize.css">
+    <link rel="stylesheet" href="styles/base/reset.css">
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="styles/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="styles/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/views/home.css">
+    <link rel="stylesheet" href="styles/common/dropdown.css">
+
+    <!--SCRIPTS-->
+    <script src="./js/snap.svg-min.js"></script>
+
+</head>
+
+<body>
+<main>
+    <section class="home-page-top-main">
+        <header>
+            <!--<div class="menu" id="menu">-->
+                <!--<img src="./img/ic_menu.png" alt="Menu Icon">-->
+            <!--</div>-->
+            <nav id="menu" class="menu">
+                <div class="morph-shape" data-morph-open="M260,500H0c0,0,8-120,8-250C8,110,0,0,0,0h260c0,0-8,110-8,250C252,380,260,500,260,500z">
+                    <svg width="100%" height="100%" viewBox="0 0 260 500" preserveAspectRatio="none">
+                        <path fill="none" d="M260,500H0c0,0,0-120,0-250C0,110,0,0,0,0h260c0,0,0,110,0,250C260,380,260,500,260,500z"/>
+                    </svg>
+                </div>
+                <button class="menu__label"> <img class="menu-icon" src="./img/ic_menu.png" alt="Menu Icon"></button>
+                <ul class="menu__inner">
+                    <li><a href="#"><i class="fa fa-fw fa-search"></i><span>Search</span></a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-user"></i><span>Account</span></a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-heart-o"></i><span>Favorites</span></a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-shopping-cart"></i><span>Notifications</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="home-page-content-top">
+            <h1 class="home-page-intro-text">
+                h3 anc <br> precision <br> acoustics
+            </h1>
+        </div>
+        <div class="home-top-button">
+            <a href="">$249 Buy</a>
+        </div>
+    </section>
+
+    <!---------------
+    schema markup
+    ----------------->
+    <section class="home-page-content-bottom" itemscope itemtype="http://schema.org/Product">
+        <div class="home-page-product-card">
+            <span class="no-display" itemprop="brand">DevMountain</span>
+            <span class="no-display" itemprop="name">Silver Headset</span>
+            <img itemprop="image"  src="./img/headphones-bg.jpg" alt="Silver Headset">
+            <span class="no-display" itemprop="description">Some description about the headphones would go here</span>
+            <span class="no-display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                 <meta itemprop="priceCurrency" content="USD" />
+                <span class="no-display" itemprop="price">119.99</span>
+            </span>
+        </div>
+        <div class="home-page-product-card">
+            <span class="no-display" itemprop="brand">DevMountain</span>
+            <span class="no-display" itemprop="name">EarBuds Black</span>
+            <img itemprop="image"  src="./img/earbuds-black.png" alt="EarBuds Black">
+            <span class="no-display" itemprop="description">Some description about the headphones would go here</span>
+            <span class="no-display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                 <meta itemprop="priceCurrency" content="USD" />
+                <span class="no-display" itemprop="price">99.99</span>
+            </span>
+        </div>
+        <div class="home-page-product-card">
+            <span class="no-display" itemprop="brand">DevMountain</span>
+            <span class="no-display" itemprop="name">Green Headset</span>
+            <img itemprop="image"  src="./img/g3-green-set.png" alt="Green Headset">
+            <span class="no-display" itemprop="description">Some description about the headphones would go here</span>
+            <span class="no-display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                 <meta itemprop="priceCurrency" content="USD" />
+                <span class="no-display" itemprop="price">139.99</span>
+            </span>
+        </div>
+        <div class="home-page-product-card">
+            <span class="no-display" itemprop="brand">DevMountain</span>
+            <span class="no-display" itemprop="name">Black and gray Headset</span>
+            <img itemprop="image"  src="./img/H2%20-%20ALWAYS%20ON.png" alt="Black and gray Headset">
+            <span class="no-display" itemprop="description">Some description about the headphones would go here</span>
+            <span class="no-display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                 <meta itemprop="priceCurrency" content="USD" />
+                <span class="no-display" itemprop="price">178.99</span>
+            </span>
+        </div>
+
+        <!--This is the spacer-->
+
+        <div class="product-card-spacer"></div>
+
+        <div class="home-page-product-card">
+            <span class="no-display" itemprop="brand">DevMountain</span>
+            <span class="no-display" itemprop="name">Womens Black Headset</span>
+            <img itemprop="image"  src="./img/H2-girl-with-headphones.png" alt="Womens Black Headset">
+            <span class="no-display" itemprop="description">Some description about the headphones would go here</span>
+            <span class="no-display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                 <meta itemprop="priceCurrency" content="USD" />
+                <span class="no-display" itemprop="price">149.99</span>
+            </span>
+        </div>
+        <div class="home-page-product-card">
+            <span class="no-display" itemprop="brand">DevMountain</span>
+            <span class="no-display" itemprop="name">Silver Earbuds</span>
+            <img itemprop="image"  src="./img/H3-%20ear-buds.png" alt="Silver Earbuds">
+            <span class="no-display" itemprop="description">Some description about the headphones would go here</span>
+            <span class="no-display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                 <meta itemprop="priceCurrency" content="USD" />
+                <span class="no-display" itemprop="price">78.99</span>
+            </span>
+        </div>
+        <div class="home-page-product-card">
+            <span class="no-display" itemprop="brand">DevMountain</span>
+            <span class="no-display" itemprop="name">Brown Headset</span>
+            <img itemprop="image"  src="./img/H6-brown-set.png" alt="Brown Headset">
+            <span class="no-display" itemprop="description">Some description about the headphones would go here</span>
+            <span class="no-display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                 <meta itemprop="priceCurrency" content="USD" />
+                <span class="no-display" itemprop="price">139.99</span>
+            </span>
+        </div>
+        <div class="home-page-product-card">
+            <span class="no-display" itemprop="brand">DevMountain</span>
+            <span class="no-display" itemprop="name">H7 Silver Headset</span>
+            <img itemprop="image"  src="./img/H7-silver-set.png" alt="H7 Silver Headset">
+            <span class="no-display" itemprop="description">Some description about the headphones would go here</span>
+            <span class="no-display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                 <meta itemprop="priceCurrency" content="USD" />
+                <span class="no-display" itemprop="price">129.99</span>
+            </span>
+        </div>
+
+        <!--This is the spacer-->
+
+        <div class="product-card-spacer"></div>
+
+        <div class="home-page-product-card">
+            <span class="no-display" itemprop="brand">DevMountain</span>
+            <span class="no-display" itemprop="name">Standard Headset</span>
+            <img itemprop="image"  src="./img/headphones-bg.jpg" alt="Standard Headset">
+            <span class="no-display" itemprop="description">Some description about the headphones would go here</span>
+            <span class="no-display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                 <meta itemprop="priceCurrency" content="USD" />
+                <span class="no-display" itemprop="price">69.99</span>
+            </span>
+        </div>
+        <div class="home-page-product-card">
+            <span class="no-display" itemprop="brand">DevMountain</span>
+            <span class="no-display" itemprop="name">Blue and Black Headset</span>
+            <img itemprop="image"  src="./img/H2%20-%20ALWAYS%20ON.png" alt="Blue and Black Headset">
+            <span class="no-display" itemprop="description">Some description about the headphones would go here</span>
+            <span class="no-display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                 <meta itemprop="priceCurrency" content="USD" />
+                <span class="no-display" itemprop="price">119.99</span>
+            </span>
+        </div>
+    </section>
+</main>
+
+<!-- Add jQuery -->
+
+<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+
+<!-- Add Script Tags -->
+<script src="./js/classie.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
