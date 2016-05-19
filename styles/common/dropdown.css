@@ -109,7 +109,7 @@
 .morph-shape svg {
 	position: absolute;
 	width: 100%;
-	top: 0;
+	top: 0;f
 	left: 0;
 }
 
@@ -129,4 +129,8 @@
 
 .menu--closed-background svg path {
 	fill: gray;
+}
+
+#menu {
+	color: #fff;
 }
