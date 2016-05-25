@@ -12,10 +12,13 @@
 // Here are more examples of properties and methods available to elements http://www.w3schools.com/jsref/dom_obj_all.asp
 
 $( document ).ready(function() {
-   $('#menu').click(function(){
-       $('.menu-overlay').toggleClass('hide-menu');
-
-   });
+   // $('#menu').click(function(){
+   //     $('.menu-overlay').toggleClass('hide-menu');
+   //
+   // });
+    $('#menu').click(function(){
+        $('.side-slideout').toggleClass('hide-item');
+    });
 
 
     //var theMenu = document.getElementById('menu'),
