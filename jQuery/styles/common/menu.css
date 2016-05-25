@@ -1,0 +1,22 @@
+.menu-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ccc;
+    z-index: 10;
+
+}
+
+.hide-menu {
+   opacity: 0;
+}
+
+.show-menu {
+    opacity: 1;
+}
+
+#someother {
+    height:auto;
+}

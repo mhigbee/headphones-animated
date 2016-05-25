@@ -1,7 +1,8 @@
 (function() {
 
     // Here we create a function that takes a element as the parameter
-    // when the SVGDDMenu function is invoked it starts a chain of events that starts with the init()
+    // When the SVGDDMenu function is invoked it starts a chain of events that starts with the init()
+
     function SVGDDMenu( el ) {
         // If you look in your console you will see a SVGDDMenu object that has our init,initEvents and toggle methods listed under the proto chain
         console.log(this);
@@ -39,7 +40,7 @@
     // Here we create a initEvents method on the SVGDDMenu objects proto chain
     SVGDDMenu.prototype.initEvents = function() {
         // Here we are adding a event listener to the entire SVGDDMenu. You'll notice that if you click anywhere on the menu bar it will toggle the class
-       // We have access to the toggle method on the SVGDDMenu object via the keyword this
+        // We have access to the toggle method on the SVGDDMenu object via the keyword this
         // We use the bind method because we are going to be using this functionality later when we click on the menubar
         this.el.addEventListener( 'click', this.toggle.bind(this) );
 
@@ -50,7 +51,6 @@
         var self = this;
 
         console.log(self.el);
-
 
         if( self.isOpen ) {
             // Here is a example of using javascript without the classie library to remove a class
